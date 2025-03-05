@@ -27,10 +27,10 @@ public class EntryController {
     @Autowired
     private UserService  userService;
 
-    @RequestMapping(value = "/")
-    public void redirect(HttpServletResponse response) throws IOException {
-        response.sendRedirect("/swagger-ui.html");
-    }
+//    @RequestMapping(value = "/")
+//    public void redirect(HttpServletResponse response) throws IOException {
+//        response.sendRedirect("/swagger-ui.html");
+//    }
 
     @GetMapping("/get")
     public ResponseEntity<?> getAll() {
